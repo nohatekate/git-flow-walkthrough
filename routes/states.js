@@ -9,6 +9,8 @@ router.post('/', statesController.create)
 
 router.get('/', statesController.index)
 
+router.get('/:id', statesController.show)
+
 router.get('/', function (req, res, next) {
     res.send()
 })
