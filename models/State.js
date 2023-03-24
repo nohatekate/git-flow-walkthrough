@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const stateSchema = new mongoose.Schema ({
+const stateSchema = new mongoose.Schema({
     name: {
         type: String
 
@@ -8,16 +8,12 @@ const stateSchema = new mongoose.Schema ({
     yearEstablished: {
         type: Number,
         min: 0
-    }, 
-    reigion: {
+    },
+    region: {
         type: String,
         enum: ["West", "Midwest", "Southwest", "Southeast", "Northeast"]
     }
 })
-
-
-
-
 
 
 module.exports = mongoose.model('State', stateSchema)

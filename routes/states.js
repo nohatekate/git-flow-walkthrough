@@ -7,7 +7,9 @@ router.get('/new', statesController.new)
 
 router.post('/', statesController.create)
 
-router.get('/', function(req,res, next){
+router.get('/', statesController.index)
+
+router.get('/', function (req, res, next) {
     res.send()
 })
 
