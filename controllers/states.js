@@ -1,9 +1,9 @@
-// const State = require('../models/State')
+//const State = require('../models/State')
 
 
 module.exports = {
     new: newState,
-    create
+    create,
 }
 
 function newState(req, res) {
@@ -12,7 +12,10 @@ function newState(req, res) {
 }
 
 function create (req, res){
-res.render('/states', {title: 'All States'})
+    // State.create(req.body).then(function(newState){
+    //     res.redirect('/')
+    // }) 
+console.log(req.body)
 }
 
 
