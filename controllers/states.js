@@ -2,7 +2,8 @@
 
 
 module.exports = {
-    new: newState
+    new: newState,
+    create
 }
 
 function newState(req, res) {
@@ -10,6 +11,9 @@ function newState(req, res) {
     res.render('states/new', { title: 'Add A State' })
 }
 
+function create (req, res){
+res.render('/states', {title: 'All States'})
+}
 
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,32 @@
         <%= title %>
     </title>
 </head>
+
 <body>
     <h1>
         <%=title%>
     </h1>
+
+    <form action="/states" method="POST" class="new-form">
+        <label>Name:
+            <input type="text" name="name">
+        </label>
+        <label>Year Established:
+            <input type="number" name="yearEstablished">
+        </label>
+        <label>Region:
+            <select name="region">
+                <option value="West">West</option>
+                <option value="Midwest">Midwest</option>
+                <option value="Southwest">Southwest</option>
+                <option value="Southeast">Southeast</option>
+                <option value="Northeast">Northeast</option>
+            </select>
+        </label>
+
+        <button type="submit">Add State</button>
+    </form>
+
 </body>
+
 </html>
